@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="output">
+            <input type="text" class="display" id="result" placeholder="0" disabled>
+        </div>
+        <div class="delete">
+            <button name="delete">C</button>
+            <h1>CASIO</h1>
+        </div>
+        <div class="buttons">
+            <button name="number">1</button>
+            <button name="number">2</button>
+            <button name="number">3</button>
+            <button name="operation">+</button>
+            <button name="number">4</button>
+            <button name="number">5</button>
+            <button name="number">6</button>
+            <button name="operation">-</button>
+            <button name="number">7</button>
+            <button name="number">8</button>
+            <button name="number">9</button>
+            <button name="operation">*</button>
+            <button name="number">0</button>
+            <button name="number">.</button>
+            <button name="equal">=</button>
+            <button name="operation">/</button>
+        </div>
+    </div>
+    <div class="contenedor center">
+        <div class="historialNumeros">
+            <div class="tituloHistorial">
+                <h3 style="margin: 0">Historial</h3>
+                <button id="limpiar" onclick="limpiarhistorial();">CH</button>
+            </div>
+            <ul id="historial"></ul>
+            <div class="titulo-historial"></div>
+        </div>
+
+        <script src="./Calculadora.js"></script>
+</body>
+
+</html>

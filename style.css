@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #0d1321;
+    border-radius: 10px;
+}
+.buttons{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4,100px);
+}
+.buttons > button{
+    cursor: pointer;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #3e5c76;
+    color: #fff;
+}
+.output{
+    background-color: #52b788;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+.output .display{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    font-family: 'Gugi', cursive;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: #52b788;
+    color: #000;
+}
+.delete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 10px;
+    margin: 5px 0;
+    color: #fff;
+}
+.delete > button{
+    width: 95px;
+    cursor: pointer;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #a10220;
+    color: #fff;
+}
+.delete > button:hover{
+    background-color: #b23a48;
+}
+.buttons > button:hover{
+    background-color: #748cab;
+}
+
+.historialNumeros{
+    padding: .2rem;
+    margin: 10px 100px 10px 10px;
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    border-style: solid;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    border-color: black;
+}
+
+.tituloHistorial {
+    display: flex;
+    justify-content: space-between;
+}
+
+#limpiar{
+    background-color: rgb(197, 38, 38);
+    color: white;
+   cursor: pointer;
+   padding: 10px;
+}
